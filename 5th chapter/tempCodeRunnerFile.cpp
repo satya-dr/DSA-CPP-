@@ -1,0 +1,1 @@
+ cout<<"All prime Number from 1 TO "<<n<<" are : ";

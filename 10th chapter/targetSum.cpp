@@ -69,38 +69,76 @@
 // }
 
 
-//Find the second largest element in a given array.
-#include<iostream>
-#include <limits.h>
+// //Find the second largest element in a given array.
+// #include<iostream>
+// #include <limits.h>
 
-using namespace std;
+// using namespace std;
    
-int largestInd(int arr[], int size){
-      int max=INT_MIN;
-      int larInd;
-      for(int i=0;i<size;i++){
-        if(arr[i]>max){
-            max=arr[i];
-            larInd=i;
-        }
-      }
-      return larInd;
-}
-int main(){
-    int arr[]={2,4,2,4,3,2,44,4};
-    int size=sizeof(arr)/sizeof(arr[0]);
-    int indexOfLarEle=largestInd(arr,size);
+// int largestInd(int arr[], int size){
+//       int max=INT_MIN;
+//       int larInd;
+//       for(int i=0;i<size;i++){
+//         if(arr[i]>max){
+//             max=arr[i];
+//             larInd=i;
+//         }
+//       }
+//       return larInd;
+// }
+// int main(){
+//     int arr[]={2,4,2,4,3,2,44,4};
+//     int size=sizeof(arr)/sizeof(arr[0]);
+//     int indexOfLarEle=largestInd(arr,size);
 
-    cout<<arr[indexOfLarEle]<<endl;
+//     cout<<arr[indexOfLarEle]<<endl;
 
-    int larEle=arr[indexOfLarEle];
+//     int larEle=arr[indexOfLarEle];
     
-    for(int i=0;i<size;i++){
-        if(arr[i]==larEle){
-            arr[i]=-1;
-        }
-    }
-    int sec_lar_ind=largestInd(arr,size);
-    cout<<arr[sec_lar_ind]<<" ";
-}
+//     for(int i=0;i<size;i++){
+//         if(arr[i]==larEle){
+//             arr[i]=-1;
+//         }
+//     }
+//     int sec_lar_ind=largestInd(arr,size);
+//     cout<<arr[sec_lar_ind]<<" ";
+// }
 
+// // Method 2
+// //Find the second largest element in a given array.
+// #include<iostream>
+// #include <limits.h>
+
+// using namespace std;
+   
+// int sec_lar(int arr[], int size){
+//       int max=INT_MIN;
+//       int sec_max=INT_MIN;
+      
+//       for(int i=0;i<size;i++){
+//         if(arr[i]>max){
+//             max=arr[i];
+           
+//         }
+//       }
+//       for(int i=0;i<size;i++){
+//         if(sec_max<arr[i] && arr[i] != max){
+//             sec_max=arr[i];
+//         }
+//       }
+
+//       return sec_max;
+// }
+// int main(){
+//     int arr[]={2,4,2,4,3,2,44,4};
+//     int size=sizeof(arr)/sizeof(arr[0]);
+   
+//     cout<<sec_lar(arr, size)<<" ";
+// }
+
+// Rotate the given array 'a' by k steps where k is a non negative number
+#include<iostream>
+using namespace std;
+int main(){
+    
+}

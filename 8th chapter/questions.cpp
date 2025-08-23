@@ -45,19 +45,33 @@
 
 
 
-// Linear search 
+// // Linear search 
+// #include<iostream>
+// using namespace std;
+// int main(){
+
+//     int arr[]={1,2,3,4,5};
+//     int key=3;
+//     int ans=-1;
+//     for(int i=0;i<5;i++){
+//         if(arr[i]==key){
+//             ans=i;
+//             break;
+//         }
+//     }
+//     cout<<ans+1;
+// }
+
+// Single number 
 #include<iostream>
 using namespace std;
 int main(){
 
-    int arr[]={1,2,3,4,5};
+    int arr[]={1,2,1,2,5};
     int key=3;
-    int ans=-1;
-    for(int i=0;i<5;i++){
-        if(arr[i]==key){
-            ans=i;
-            break;
-        }
+    int ans=0;
+    for(int val:arr){
+        ans=ans^val;
     }
-    cout<<ans+1;
+    cout<<ans;
 }

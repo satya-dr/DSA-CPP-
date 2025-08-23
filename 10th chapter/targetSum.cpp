@@ -140,5 +140,12 @@
 #include<iostream>
 using namespace std;
 int main(){
-    
+    int arr[]={3,2,1,4,2,3};
+    int size=sizeof(arr)/sizeof(arr[0]);
+    int n=size;
+    int k=2;
+    int arr1[n];
+    for(int i=size;i>n-k;i--){
+            //  arr1[]=arr[i];
+    }
 }

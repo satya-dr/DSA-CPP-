@@ -29,6 +29,15 @@ string name;
 
 };
 
+class Accouunts{
+private:    
+   double balance;
+   string passsword;
+public:   
+    string accountId;
+    string username;
+};
+
 int main(){
     teacher t1;
     t1.name="Satyajit Roy";
